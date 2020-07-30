@@ -38,12 +38,16 @@ foreign 패키지의 read.spass()를 이용해 복지패널데이터를 불러�
 
 \#데이터 불러오기
 
-raw\_welfare \<- read.spss(file = “Koweps\_hpc10\_2015\_betal.sav”,
-to.data.frame = T)
+``` r
+raw_welfare <- read.spss(file = "Koweps_hpc10_2015_beta1.sav",
+                         to.data.frame = T)
+```
 
 \#복사본 만들기
 
-welfare \<-raw\_welfare
+``` r
+welfare <-raw_welfare
+```
 
 #### 4\. 데이터 검토하기
 
