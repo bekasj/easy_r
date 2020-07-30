@@ -36,10 +36,14 @@ library(readxl)              # 엑셀 파일 불러오기
 
 foreign 패키지의 read.spass()를 이용해 복지패널데이터를 불러온다.
 
-\#데이터 불러오기 raw\_welfare \<-read.spass(file =
-“Koweps\_hpc10\_2015\_betal.sav”, to.data.frame = T)
+\#데이터 불러오기
 
-\#복사본 만들기 welfare \<-raw\_welfare
+raw\_welfare \<- read.spss(file = “Koweps\_hpc10\_2015\_betal.sav”,
+to.data.frame = T)
+
+\#복사본 만들기
+
+welfare \<-raw\_welfare
 
 #### 4\. 데이터 검토하기
 
